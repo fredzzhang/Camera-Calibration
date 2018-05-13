@@ -44,8 +44,15 @@ X = rand(4, 6);
 % Projection
 x = P * X;
 
+% Reformat points
+X = X ./ repmat(X(4, :), 4, 1);
+X = X(1: 3, :);
+x = x ./ repmat(x(3, :), 3, 1);
+x = x(1: 2, :);
+
+
 % Compute camera matrix
-Pcal = calibration(X, x);
+Pcal = calibrate(X', x');
 
 % Normalize the last element
 Pcal = Pcal / Pcal(3, 4);
