@@ -11,6 +11,7 @@ Usage: P = calibrate(pts3d, pts2d)
 Perform camera calibration on synthetic data
 
 Changeable parameters:
+
     theta - rotation angle of the camera [Default: random between -pi and pi]
     axis - rotation axis [Default: ramdom axis in 3d space]
     f - focal length of the camera [Default: 500mm]
@@ -18,4 +19,8 @@ Changeable parameters:
 
 ## test_3dgrid.m
 Perform camera calibration using images taken on 3d calibration grid
+
+1. Choose target 3d points (coordinate convention explained in coord.jpg)
+2. Write all target 3d points in a txt file (e.g. pts3d.txt)
+3. Run the script and choose corresponding 2d points in the image by clicking them in the exact order as the 3d points
 
