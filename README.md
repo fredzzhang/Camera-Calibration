@@ -20,6 +20,8 @@ Changeable parameters:
 ## test_3dgrid.m
 Perform camera calibration using images taken on 3d calibration grid
 
+![Coordinate](/coord.jpg)
+
 1. Choose target 3d points (coordinate convention explained in coord.jpg)
 2. Write all target 3d points in a txt file (e.g. pts3d.txt)
 3. Run the script and choose corresponding 2d points in the image by clicking them in the exact order as the 3d points
